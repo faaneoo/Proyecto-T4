@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-transition" content="same-origin" />
+
+    <title>Portafolio Profesional</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">MiPortafolio</div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>Hola, soy <span class="highlight">Rafael de la Torre</span></h1>
+        <p>Desarrollador Web Creativo</p>
+        <a href="#contacto" class="btn">Contáctame</a>
+      </div>
+
+      <div class="hero-visual-3d">
+        <div class="cube">
+          <div class="face front">HTML</div>
+          <div class="face back">CSS</div>
+          <div class="face right">UI</div>
+          <div class="face left">UX</div>
+          <div class="face top">WEB</div>
+          <div class="face bottom">DEV</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+      <div class="container">
+        <h2>Sobre Mí</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Soy un apasionado del diseño web y la maquetación. Me especializo
+              en crear experiencias visuales impactantes y funcionales.
+            </p>
+
+            <div class="skills-icons">
+              <img
+                src="images/html-svgrepo-com.svg"
+                alt="Icono html"
+                class="icon"
+              />
+              <img
+                src="images/css-3-svgrepo-com.svg"
+                alt="Icono Css"
+                class="icon"
+              />
+              <img
+                src="images/javascript-logo-svgrepo-com.svg"
+                alt="Icono JS"
+                class="icon"
+              />
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="images/FotoPersonal.png"
+              sizes="(max-width: 600px) 480px, 800px"
+              alt="Foto de perfil con transparencia"
+              class="profile-pic"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <h2>Mis Proyectos</h2>
+        <div class="project-grid">
+          <article class="card">
+            <picture>
+              <source srcset="images/Frontend.png" type="image/avif" />
+              <source srcset="images/Frontend.png" type="image/webp" />
+              <img
+                src="images/Frontend.png"
+                alt="Captura del Proyecto 1"
+                loading="lazy"
+              />
+            </picture>
+            <div class="card-content">
+              <h3>Proyecto Alpha</h3>
+              <p>Desarrollo frontend utilizando metodologías ágiles.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <picture>
+              <source srcset="images/Diseño INterfaz.png" type="image/avif" />
+              <source srcset="images/Diseño INterfaz.png" type="image/webp" />
+              <img
+                src="images/Diseño INterfaz.png"
+                alt="Captura del Proyecto 1"
+                loading="lazy"
+              />
+            </picture>
+            <div class="card-content">
+              <h3>Proyecto Beta</h3>
+              <p>Diseño de interfaz de usuario moderna.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <picture>
+              <source srcset="images/descarga.png" type="image/avif" />
+              <source srcset="images/descarga.png" type="image/webp" />
+              <img
+                src="images/descarga.png"
+                alt="Captura del Proyecto Gamma"
+                loading="lazy"
+              />
+            </picture>
+            <div class="card-content">
+              <h3>Proyecto Gamma</h3>
+              <p>Optimización y accesibilidad web.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="container contact-container">
+        <h2>Contacto</h2>
+        <form action="#" class="form">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="¿En qué puedo ayudarte?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        &copy; 2026 Mi Portafolio. Creado solo con HTML y CSS.
+        <a href="https://github.com/faaneoo">https://github.com/faaneoo</a>
+      </p>
+    </footer>
+  </body>
+</html>
